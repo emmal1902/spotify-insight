@@ -1,9 +1,9 @@
+from dotenv import load_dotenv
+import os
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
-import os
-from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv()  # IMPORTANT
 
 def get_spotify_client():
     return spotipy.Spotify(auth_manager=SpotifyOAuth(
